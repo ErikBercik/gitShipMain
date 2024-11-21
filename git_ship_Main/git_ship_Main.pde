@@ -1,8 +1,8 @@
 // Here's where we'll put all the variables to mess with
 
 //crew roster
-String pilot = "Prof Kit";
-String copilot = "";
+String pilot = "Prof. Kit";
+String copilot = "Cad. Eri";
 
 //spacecraft controls
 boolean viewscreen = true; //powers up main viewscreen
@@ -97,6 +97,7 @@ void init(){
   
   //checksum
   healthbar = new Checksum();
+  healthbar.checksum += pow(2, 2);
   //starfield simulation
   for(int i = 0; i < stars. length; i++){
     stars[i] = new Star();
